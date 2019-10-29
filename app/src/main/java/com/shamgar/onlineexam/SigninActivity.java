@@ -48,8 +48,9 @@ public class SigninActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Start the Signup activity
-                Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
-                startActivityForResult(intent, REQUEST_SIGNUP);
+                Intent intent = new Intent(getApplicationContext(), RegisterTypeActivity.class);
+//                startActivityForResult(intent, REQUEST_SIGNUP);
+                startActivity(intent);
             }
         });
     }

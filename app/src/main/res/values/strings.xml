@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">OnlineExam</string>
+    <string name="country_prompt">Choose</string>
+
+    <string-array name="reg_array">
+        <item>Choose</item>
+        <item>Student</item>
+        <item>Faculty</item>
+        <item>Vendor</item>
+    </string-array>
 </resources>

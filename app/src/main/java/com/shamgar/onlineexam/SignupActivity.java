@@ -19,6 +19,7 @@ public class SignupActivity extends AppCompatActivity {
     EditText _passwordText;
     Button _signupButton;
     TextView _loginLink;
+    String type;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,16 @@ public class SignupActivity extends AppCompatActivity {
         _signupButton = findViewById(R.id.btn_signup);
         _loginLink = findViewById(R.id.link_login);
 
+        type = getIntent().getExtras().getString("type");
+        if(type=="Faculty"){
+            Toast.makeText(this, ""+type, Toast.LENGTH_SHORT).show();
+        }
+        if (type=="Vendor"){
+            Toast.makeText(this, ""+type, Toast.LENGTH_SHORT).show();
+        }
+        if(type== "Stuident"){
+            Toast.makeText(this, ""+type, Toast.LENGTH_SHORT).show();
+        }
         _signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
