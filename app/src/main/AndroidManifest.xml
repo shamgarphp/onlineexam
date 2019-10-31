@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RegisterTypeActivity"></activity>
+        <activity android:name=".FacultySignup"></activity>
+        <activity android:name=".RegisterTypeActivity" />
         <activity android:name=".SignupActivity" />
         <activity android:name=".SigninActivity">
             <intent-filter>
